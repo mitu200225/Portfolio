@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahera Jannat Mitu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+    <nav>
+        <div class="logo">Tahera Jannat Mitu</div>
+        <ul class="nav-links">
+    <li><a href="#about" id="aboutMenu">About</a></li>
+    <li><a href="education.html" id="educationMenu">Education</a></li> <!-- এখানে নতুন লিঙ্ক -->
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+    </nav>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+       <div class="hero-content">
+       <h1>Hi, I'm <span>Tahera Jannat Mitu</span></h1>
+       <p>Aspiring Software Engineering Student at SUST</p>
+       <a href="#projects" class="btn">View My Work</a>
+       </div>
+
+       <div class="hero-image">
+       <img src="image.jpg" alt="Tahera Jannat Mitu">
+       </div>
+</section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        A motivated student pursuing BSc in Software Engineering at SUST, eager to apply theoretical knowledge to practical solutions and continuously develop skills through challenges and collaborations.
+    </p>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education" style="display:none;">
+    <h2>Education</h2>
+    <p>
+        BSc in Software Engineering at Shahjalal University of Science and Technology (SUST). Expected to graduate in 2026.<br>
+        Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering Principles, Machine Learning, Web Development.
+    </p>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C++</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">ML</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">MS Word</div>
+            <div class="skill">Excel</div>
+            <div class="skill">PowerPoint</div>
+            <div class="skill">Teamwork</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+    <h2>Projects & Experience</h2>
+    <p class="projects-intro">Here are some of my notable projects and experiences.</p>
+
+    <div class="project-card">
+        <h3>Quran App</h3>
+        <a href="project-details.html?id=1" class="btn">View Details</a>
+    </div>
+    <div class="project-card">
+        <h3>Student Management System</h3>
+        <a href="project-details.html?id=2" class="btn">View Details</a>
+    </div>
+    <div class="project-card">
+        <h3>Snake Game</h3>
+        <a href="project-details.html?id=3" class="btn">View Details</a>
+    </div>
+    <div class="project-card">
+        <h3>Calculator</h3>
+        <a href="project-details.html?id=4" class="btn">View Details</a>
+    </div>
+    <div class="project-card">
+        <h3>Stopwatch</h3>
+        <a href="project-details.html?id=5" class="btn">View Details</a>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Info</h2>
+        <div class="contact-info">
+            <p>📧 Email: <a href="mailto:taherajannat1971@gmail.com">taherajannat1971@gmail.com</a></p>
+            <p>📱 Phone: <a href="tel:+8801842126941">+880 1842 126 941</a></p>
+            <p>🔗 LinkedIn: <a href="https://linkedin.com/in/tahera-jannat-mitu-6994a8284">LinkedIn Profile</a></p>
+            <p>💻 GitHub: <a href="https://github.com/mitu200225">GitHub Profile</a></p>
+        </div>
+        
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <p id="formMsg"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Tahera Jannat Mitu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

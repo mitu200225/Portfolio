@@ -1,0 +1,345 @@
+:root {
+  --primary-color: #6b5b95;
+  --secondary-color: #feb236;
+  --accent-color: #d64161;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+  --muted-color: #666;
+  --btn-bg: var(--primary-color);
+  --btn-hover-bg: var(--accent-color);
+  --card-bg: #fff;
+  --shadow-color: rgba(0,0,0,0.1);
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navbar */
+header nav {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: color var(--transition-speed);
+}
+
+.logo:hover {
+  color: var(--secondary-color);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.nav-links li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  animation: fadeInDown 1s ease forwards;
+}
+.hero-image img {
+  width: 320px;
+  height: 320px;      
+  object-fit: cover;  
+  border-radius: 50%; 
+  box-shadow: 0 8px 20px var(--shadow-color);
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.hero h1 span {
+  color: var(--secondary-color);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  animation: slideInRight 1s ease forwards;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px var(--shadow-color);
+  transition: background-color var(--transition-speed), transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* Sections common style */
+section {
+  max-width: 900px;
+  margin: 4rem auto;
+  background-color: var(--card-bg);
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px var(--shadow-color);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+}
+
+/* About Me */
+.about p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  color: var(--muted-color);
+  transition: color var(--transition-speed);
+}
+
+.contact-info p a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.contact-info p a:hover {
+  color: var(--accent-color);
+}
+
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: default;
+  box-shadow: 0 4px 8px rgba(107, 91, 149, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px rgba(214, 65, 97, 0.5);
+}
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem; 
+}
+
+.projects-intro {
+  margin: 0 0 1.8rem 0;
+  font-size: 1.1rem;
+  color: var(--muted-color);
+  text-align: center;
+  font-style: italic;
+}
+
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px var(--shadow-color);
+  overflow: hidden;
+  max-width: 320px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.project-card p {
+  padding: 0 1rem 1rem;
+  color: var(--muted-color);
+  font-size: 0.9rem;
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 14px 30px rgba(214, 65, 97, 0.6);
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Contact Form */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input, .contact textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--muted-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact input:focus, .contact textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.contact button {
+  width: 150px;
+  align-self: flex-start;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project Details - Tahera Jannat Mitu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .meta {display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;color:#666}
+    .tags {background:#f1f5f9;padding:6px 10px;border-radius:999px;font-weight:600}
+    .back-row {display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .preview-grid {display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:900px){ .preview-grid{grid-template-columns: 1fr 360px} }
+    .side-card {background:#fff;padding:14px;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.06)}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"> Tahera Jannat Mitu</div>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main style="max-width:1100px;margin:26px auto;padding:0 18px;">
+    <div class="project-details">
+      <div class="back-row" style="margin-bottom:12px;">
+        <a href="index.html" class="btn secondary">← Back to Home</a>
+      </div>
+
+      <div class="preview-grid">
+        <!-- Main content -->
+        <div>
+          <h2 id="projectTitle">Loading...</h2>
+          <p id="projectShort" style="color:#666;margin-top:6px"></p>
+          <img id="projectImage" src=""alt="" style="width:100%;border-radius:10px;margin-top:14px;box-shadow:0 10px 30px rgba(2,6,23,0.06)">
+          <h3 style="margin-top:18px">Description</h3>
+          <p id="projectDescription" style="color:#666;line-height:1.7"></p>
+
+          <h3 style="margin-top:16px">Features</h3>
+          <ul id="projectFeatures" style="color:#666;line-height:1.7"></ul>
+
+          <h3 style="margin-top:16px">Notes</h3>
+          <p id="projectNotes" style="color:#666"></p>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="side-card">
+          <div class="meta" id="projectTags"></div>
+
+          <div style="margin-top:12px">
+            <strong>Technologies</strong>
+            <p style="margin-top:6px;color:#666" id="projectTech"></p>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Role</strong>
+            <p style="margin-top:6px;color:#666" id="projectRole"></p>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Contact</strong>
+            <p style="margin-top:6px;color:#666">taherajannat1971@gmail.com</p>
+          </div>
+
+          <div style="margin-top:14px">
+            <a id="liveLink" class="btn" href="#" target="_blank">Open Repo / Demo</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align:center;color:#666;padding:18px 0">© 2025 Tahera Jannat Mitu — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const projects = {
+      1: {
+        title: "Quran App (Flutter)",
+        short: "Mobile app to play Quran audio with translations and playback controls.",  
+        description: "This mobile app lets users listen to Quran recitations with translations, playback controls, and background support.",
+        features: [
+          "Play/pause audio per-surah",
+          "Select translations (English, Urdu)",
+          "Background playback",
+          "Surah search & navigation"
+        ],
+        tech: "Flutter, Dart, just_audio, REST API",
+        notes: "Uses streaming and caching for smooth playback.",
+        tags: ["Flutter", "Dart", "API", "Audio"],
+        role: "Developer — audio & API integration",
+        link: "#"
+      },
+      2: {
+        title: "Student Management System",
+        short: "CLI system to manage student records using C++ & MySQL.",
+        image: "https://via.placeholder.com/1200x700?text=Student+Management",
+        description: "Manage student data with add, edit, search features.",
+        features: [
+          "Add, edit, delete records",
+          "Search by ID or name",
+          "MySQL database integration"
+        ],
+        tech: "C++, MySQL",
+        notes: "Good for learning DB connectivity.",
+        tags: ["C++", "MySQL"],
+        role: "Developer",
+        link: "#"
+      },
+      3: {
+    title: "Snake Game (SDL + C++)",
+    short: "Classic snake game developed using SDL and C++.",
+    image: "https://via.placeholder.com/1200x700?text=Snake+Game+Screenshot",
+    description: "Classic Snake game developed with SDL library and C++ for rendering graphics and handling real-time input. The game features smooth controls and classic gameplay where the snake grows longer by eating food while avoiding collisions with walls and itself.",
+    features: [
+      "Real-time keyboard input for smooth snake movement",
+      "Dynamic snake growth upon eating food",
+      "Collision detection with walls and self",
+      "Score tracking and game-over screen",
+      "Simple and clean graphical interface"
+    ],
+    tech: "SDL2, C++, Object-Oriented Programming",
+    notes: "Developed as a fun project to learn game programming and graphics handling in C++.",
+    tags: ["SDL", "C++", "Game Development"],
+    role: "Sole developer — designed game logic and graphics rendering",
+    link: "#"
+      },
+      4: {
+  title: "Java Calculator",
+  short: "A simple Java-based calculator with GUI for basic arithmetic operations.",
+  image: "https://via.placeholder.com/1200x700?text=Java+Calculator+Screenshot",
+  description: "A desktop calculator application built with Java Swing, capable of performing basic arithmetic operations with a clean and intuitive GUI.",
+  features: [
+    "Addition, subtraction, multiplication, division",
+    "Clear and backspace functions",
+    "Responsive button layout",
+    "Error handling for invalid inputs"
+  ],
+  tech: "Java, Swing",
+  notes: "Built as a practice project for learning GUI development in Java.",
+  tags: ["Java", "Swing", "GUI"],
+  role: "Developer — designed UI and implemented all features",
+  link: "#"
+     },
+      5: {
+  title: "Stopwatch",
+  short: "A functional stopwatch made using HTML, CSS, and JavaScript.",
+  image: "https://via.placeholder.com/1200x700?text=Stopwatch+Screenshot",
+  description: "A web-based stopwatch with a clean UI, capable of starting, stopping, and resetting time. Built to practice DOM manipulation and event handling in JavaScript.",
+  features: [
+    "Start, stop, and reset functionality",
+    "Milliseconds, seconds, and minutes tracking",
+    "Responsive and minimal design",
+    "Keyboard shortcuts for control"
+  ],
+  tech: "HTML, CSS, JavaScript",
+  notes: "Lightweight and works offline, perfect for quick timing tasks.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  role: "Developer — implemented time tracking logic and UI design",
+  link: "#"
+     }
+   };
+
+    // Load project from URL
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const proj = projects[id];
+
+    if (proj) {
+      document.getElementById('projectTitle').textContent = proj.title;
+      document.getElementById('projectShort').textContent = proj.short;
+      document.getElementById('projectImage').src = proj.image;
+      document.getElementById('projectDescription').textContent = proj.description;
+      document.getElementById('projectTech').textContent = proj.tech;
+      document.getElementById('projectNotes').textContent = proj.notes;
+      document.getElementById('projectRole').textContent = proj.role;
+
+      // Tags
+      const tagContainer = document.getElementById('projectTags');
+      proj.tags.forEach(tag => {
+        const span = document.createElement('span');
+        span.className = 'tags';
+        span.textContent = tag;
+        tagContainer.appendChild(span);
+      });
+
+      // Features
+      const featList = document.getElementById('projectFeatures');
+      proj.features.forEach(f => {
+        const li = document.createElement('li');
+        li.textContent = f;
+        featList.appendChild(li);
+      });
+
+      // Link
+      const liveLink = document.getElementById('liveLink');
+      liveLink.href = proj.link;
+      if (!proj.link || proj.link === '#') liveLink.style.display = 'none';
+    } else {
+      document.getElementById('projectTitle').textContent = 'Project Not Found';
+      document.getElementById('projectDescription').textContent = 'No project details available.';
+    }
+  </script>
+</body>
+</html>
