@@ -1,6 +1,6 @@
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  
+
   let name = document.getElementById("name").value.trim();
   let email = document.getElementById("email").value.trim();
   let message = document.getElementById("message").value.trim();
@@ -11,7 +11,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     msgElement.textContent = "Please fill in all fields!";
     return;
   }
-
   if(!email.includes("@") || !email.includes(".")) {
     msgElement.style.color = "red";
     msgElement.textContent = "Please enter a valid email!";
