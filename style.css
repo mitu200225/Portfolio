@@ -93,7 +93,6 @@ header nav {
   animation: fadeInUp 1s ease forwards;
 }
 
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -153,7 +152,6 @@ section h2 {
   padding-bottom: 0.3rem;
 }
 
-/* About Me */
 .about p {
   font-size: 1.1rem;
   color: var(--text-color);
@@ -178,7 +176,6 @@ section h2 {
   color: var(--accent-color);
 }
 
-/* Skills */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -201,8 +198,6 @@ section h2 {
   transform: translateY(-6px);
   box-shadow: 0 12px 18px rgba(214, 65, 97, 0.5);
 }
-
-/* Projects */
 
 .projects {
   display: flex;
@@ -263,7 +258,6 @@ section h2 {
   transform: scale(1.1);
 }
 
-/* Contact Form */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -290,7 +284,6 @@ section h2 {
   align-self: flex-start;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem 0;
